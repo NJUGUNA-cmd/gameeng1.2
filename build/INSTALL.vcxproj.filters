@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\IAN\source\repos\gameeng1.2\build\CMakeFiles\8f662f2190a43f1f68a0084ce8663adc\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6A48AC1D-5D1C-3199-9483-CB4BA319FEEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

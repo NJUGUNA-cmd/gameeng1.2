@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\IAN\source\repos\gameeng1.2\build\CMakeFiles\333556ceeb7a622c6ef571090473b18e\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\IAN\Desktop\glfw-3.4\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\IAN\Desktop\glfw-3.4\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\IAN\Desktop\glfw-3.4\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\IAN\source\repos\gameeng1.2\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6A48AC1D-5D1C-3199-9483-CB4BA319FEEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AB7185FE-FCAF-3898-8C35-79D20A9E65AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
