@@ -18,6 +18,11 @@ void Camera::updateMatrix(float FOVdeg, float nearPlane, float farPlane)
 	//sets a new cameraMatrix
 	cameraMatrix= projection * view;
 }
+glm::mat4 Camera::GetViewMatrix()const {
+	glm::mat4 projection = glm::perspective(glm::radians(FOVdeg), (float)(width / height), nearPlane, farPlane);
+
+	return glm::inverse(projection) * cameraMatrix;
+}
 
 void Camera::Matrix(Shader& shader, const char* uniform)
 {
@@ -101,5 +106,5 @@ void Camera::Inputs(GLFWwindow* window)
 		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 		firstClick = true;
 	}
-
+	
 }

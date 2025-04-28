@@ -48,6 +48,15 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -55,6 +64,26 @@
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="default.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="light.frag" />
+    <None Include="light.vert" />
+    <None Include="terrain.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="terrain.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="cube.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="cube.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="mandelbrot.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="mandelbrot.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>
@@ -75,6 +104,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grid.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
