@@ -1,0 +1,14 @@
+[
+    {
+        "key": "ctrl+f6",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run Game"
+    },
+    {
+        "key": "f7",
+        "command": "workbench.action.debug.start"
+    }
+]
+
+
+

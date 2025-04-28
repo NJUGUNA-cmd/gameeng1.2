@@ -2407,6 +2407,7 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/backward/binders.h \
   C:/mingw64/include/c++/14.2.0/bit \
   C:/mingw64/include/c++/14.2.0/bits/alloc_traits.h \
+  C:/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
   C:/mingw64/include/c++/14.2.0/bits/allocator.h \
   C:/mingw64/include/c++/14.2.0/bits/basic_ios.h \
   C:/mingw64/include/c++/14.2.0/bits/basic_ios.tcc \
@@ -2414,6 +2415,7 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
   C:/mingw64/include/c++/14.2.0/bits/char_traits.h \
   C:/mingw64/include/c++/14.2.0/bits/charconv.h \
+  C:/mingw64/include/c++/14.2.0/bits/chrono.h \
   C:/mingw64/include/c++/14.2.0/bits/codecvt.h \
   C:/mingw64/include/c++/14.2.0/bits/concept_check.h \
   C:/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
@@ -2422,6 +2424,10 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/bits/exception.h \
   C:/mingw64/include/c++/14.2.0/bits/exception_defines.h \
   C:/mingw64/include/c++/14.2.0/bits/exception_ptr.h \
+  C:/mingw64/include/c++/14.2.0/bits/fs_dir.h \
+  C:/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
+  C:/mingw64/include/c++/14.2.0/bits/fs_ops.h \
+  C:/mingw64/include/c++/14.2.0/bits/fs_path.h \
   C:/mingw64/include/c++/14.2.0/bits/fstream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/functexcept.h \
   C:/mingw64/include/c++/14.2.0/bits/functional_hash.h \
@@ -2431,8 +2437,11 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/bits/istream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/locale_classes.h \
   C:/mingw64/include/c++/14.2.0/bits/locale_classes.tcc \
+  C:/mingw64/include/c++/14.2.0/bits/locale_conv.h \
   C:/mingw64/include/c++/14.2.0/bits/locale_facets.h \
   C:/mingw64/include/c++/14.2.0/bits/locale_facets.tcc \
+  C:/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h \
+  C:/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
   C:/mingw64/include/c++/14.2.0/bits/localefwd.h \
   C:/mingw64/include/c++/14.2.0/bits/memory_resource.h \
   C:/mingw64/include/c++/14.2.0/bits/memoryfwd.h \
@@ -2441,12 +2450,16 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/bits/new_allocator.h \
   C:/mingw64/include/c++/14.2.0/bits/ostream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
+  C:/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
   C:/mingw64/include/c++/14.2.0/bits/postypes.h \
   C:/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
   C:/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
+  C:/mingw64/include/c++/14.2.0/bits/quoted_string.h \
   C:/mingw64/include/c++/14.2.0/bits/range_access.h \
   C:/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
+  C:/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
+  C:/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/mingw64/include/c++/14.2.0/bits/sstream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/std_abs.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -2460,6 +2473,7 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+  C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
   C:/mingw64/include/c++/14.2.0/bits/utility.h \
@@ -2467,29 +2481,39 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/cctype \
   C:/mingw64/include/c++/14.2.0/cerrno \
   C:/mingw64/include/c++/14.2.0/clocale \
+  C:/mingw64/include/c++/14.2.0/codecvt \
   C:/mingw64/include/c++/14.2.0/concepts \
   C:/mingw64/include/c++/14.2.0/cstddef \
+  C:/mingw64/include/c++/14.2.0/cstdint \
   C:/mingw64/include/c++/14.2.0/cstdio \
   C:/mingw64/include/c++/14.2.0/cstdlib \
+  C:/mingw64/include/c++/14.2.0/ctime \
   C:/mingw64/include/c++/14.2.0/cwchar \
   C:/mingw64/include/c++/14.2.0/cwctype \
   C:/mingw64/include/c++/14.2.0/debug/assertions.h \
   C:/mingw64/include/c++/14.2.0/debug/debug.h \
   C:/mingw64/include/c++/14.2.0/exception \
+  C:/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
   C:/mingw64/include/c++/14.2.0/ext/alloc_traits.h \
   C:/mingw64/include/c++/14.2.0/ext/atomicity.h \
+  C:/mingw64/include/c++/14.2.0/ext/concurrence.h \
   C:/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
   C:/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/mingw64/include/c++/14.2.0/ext/type_traits.h \
+  C:/mingw64/include/c++/14.2.0/filesystem \
   C:/mingw64/include/c++/14.2.0/fstream \
   C:/mingw64/include/c++/14.2.0/initializer_list \
+  C:/mingw64/include/c++/14.2.0/iomanip \
   C:/mingw64/include/c++/14.2.0/ios \
   C:/mingw64/include/c++/14.2.0/iosfwd \
   C:/mingw64/include/c++/14.2.0/iostream \
   C:/mingw64/include/c++/14.2.0/istream \
+  C:/mingw64/include/c++/14.2.0/limits \
+  C:/mingw64/include/c++/14.2.0/locale \
   C:/mingw64/include/c++/14.2.0/new \
   C:/mingw64/include/c++/14.2.0/ostream \
   C:/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
+  C:/mingw64/include/c++/14.2.0/ratio \
   C:/mingw64/include/c++/14.2.0/sstream \
   C:/mingw64/include/c++/14.2.0/stdexcept \
   C:/mingw64/include/c++/14.2.0/stdlib.h \
@@ -2512,7 +2536,9 @@ CMakeFiles/gameeng.dir/shaderClass.cpp.obj: C:/Users/IAN/source/repos/gameeng1.2
   C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+  C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
   C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
@@ -2937,11 +2963,15 @@ C:/Users/IAN/source/repos/OpenGL/include/glm/ext/matrix_double3x3_precision.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
+C:/mingw64/include/c++/14.2.0/bits/fs_dir.h:
+
 C:/Program\ Files/GLFW/include/GLFW/glfw3.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/vector_int3.hpp:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/detail/_vectorize.hpp:
+
+C:/mingw64/include/c++/14.2.0/bits/fs_ops.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/vector_bool1.hpp:
 
@@ -2958,6 +2988,8 @@ C:/mingw64/include/c++/14.2.0/bits/codecvt.h:
 C:/Users/IAN/source/repos/OpenGL/include/KHR/khrplatform.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/detail/func_common.inl:
+
+C:/mingw64/include/c++/14.2.0/ext/concurrence.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/common.hpp:
 
@@ -3088,6 +3120,8 @@ C:/Users/IAN/source/repos/OpenGL/include/glm/detail/type_mat3x4.hpp:
 C:/Users/IAN/source/repos/OpenGL/include/glm/detail/type_mat3x4.inl:
 
 C:/mingw64/include/c++/14.2.0/debug/assertions.h:
+
+C:/mingw64/include/c++/14.2.0/bits/parse_numbers.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/matrix_double3x2_precision.hpp:
 
@@ -3249,6 +3283,8 @@ C:/mingw64/x86_64-w64-mingw32/include/servprov.h:
 
 C:/mingw64/include/c++/14.2.0/cassert:
 
+C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h:
+
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/matrix_float4x3.hpp:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/matrix_float4x3_precision.hpp:
@@ -3370,6 +3406,8 @@ C:/mingw64/x86_64-w64-mingw32/include/bcrypt.h:
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/vector_double2_precision.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnnivlintrin.h:
+
+C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/ext/vector_double3.hpp:
 
@@ -3497,6 +3535,8 @@ C:/mingw64/include/c++/14.2.0/bits/predefined_ops.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtc/epsilon.inl:
 
+C:/mingw64/include/c++/14.2.0/bits/shared_ptr.h:
+
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtc/matrix_transform.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
@@ -3518,6 +3558,8 @@ C:/Users/IAN/source/repos/OpenGL/include/glm/gtc/type_ptr.inl:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/component_wise.hpp:
+
+C:/mingw64/include/c++/14.2.0/bits/quoted_string.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/component_wise.inl:
 
@@ -3549,6 +3591,8 @@ C:/mingw64/x86_64-w64-mingw32/include/rpcnsi.h:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/quaternion.inl:
 
+C:/mingw64/include/c++/14.2.0/ratio:
+
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/rotate_vector.hpp:
 
 C:/mingw64/include/c++/14.2.0/bits/allocator.h:
@@ -3556,6 +3600,8 @@ C:/mingw64/include/c++/14.2.0/bits/allocator.h:
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/rotate_vector.inl:
 
 C:/Users/IAN/source/repos/OpenGL/include/glm/gtx/vector_angle.hpp:
+
+C:/mingw64/include/c++/14.2.0/bits/chrono.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/excpt.h:
 
@@ -3929,6 +3975,8 @@ C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
 
+C:/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.h:
+
 C:/Users/IAN/source/repos/gameeng1.2/Cube.cpp:
 
 C:/mingw64/include/c++/14.2.0/bits/stl_vector.h:
@@ -4053,11 +4101,15 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsavesintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h:
 
+C:/mingw64/include/c++/14.2.0/ext/aligned_buffer.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/basetsd.h:
+
+C:/mingw64/include/c++/14.2.0/locale:
 
 C:/mingw64/x86_64-w64-mingw32/include/cderr.h:
 
@@ -4195,6 +4247,8 @@ C:/mingw64/x86_64-w64-mingw32/include/unknwn.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/urlmon.h:
 
+C:/mingw64/include/c++/14.2.0/bits/locale_conv.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h:
@@ -4226,6 +4280,26 @@ C:/mingw64/x86_64-w64-mingw32/include/winuser.h:
 C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
 
 C:/Users/IAN/source/repos/gameeng1.2/shaderClass.cpp:
+
+C:/mingw64/include/c++/14.2.0/bits/allocated_ptr.h:
+
+C:/mingw64/include/c++/14.2.0/bits/fs_fwd.h:
+
+C:/mingw64/include/c++/14.2.0/bits/fs_path.h:
+
+C:/mingw64/include/c++/14.2.0/bits/locale_facets_nonio.tcc:
+
+C:/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h:
+
+C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h:
+
+C:/mingw64/include/c++/14.2.0/codecvt:
+
+C:/mingw64/include/c++/14.2.0/ctime:
+
+C:/mingw64/include/c++/14.2.0/filesystem:
+
+C:/mingw64/include/c++/14.2.0/iomanip:
 
 C:/Users/IAN/source/repos/gameeng1.2/stb.cpp:
 

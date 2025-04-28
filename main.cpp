@@ -14,10 +14,10 @@
 #include"VBO.h"
 #include"EBO.h"
 
-const unsigned int width = 1920;
-const unsigned int height = 1080;
+const unsigned int width = 1080;
+const unsigned int height = 1050;
 
-Game gamestart(1920, 1080);
+Game gamestart(1680, 1050);
 int main() {
     try {
         std::cout << "Starting program..." << std::endl;

@@ -21,9 +21,24 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+        {
+            "label": "Run Game",
+            "type": "shell",
+            "command": "C:\\Windows\\System32\\cmd.exe",
+            "args": [
+                "/C",
+                "C:\\Users\\IAN\\source\\repos\\gameeng1.2\\build\\gameeng.exe"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "clear": true,
+                "focus": true
+            }
         }
     ]
 }
-
 
 

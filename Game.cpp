@@ -63,7 +63,7 @@ void Game::Init() {
 
 		try {
 			std::cout << "Creating mandelbrot shader..." << std::endl;
-			gridShader = new Shader("../mandelbrot.vert", "../mandelbrot.frag");
+			gridShader = new Shader("../default.vert", "../default.frag");
 			if (!gridShader || gridShader->ID == 0) {
 				throw std::runtime_error("Failed to create mandelbrot shader");
 			}
