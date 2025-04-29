@@ -42,12 +42,12 @@ void Game::Init() {
 		// Check if shader files exist before trying to load them
 		std::cout << "Checking shader files..." << std::endl;
 		const char* shaderFiles[] = {
-			"../mandelbrot.vert",
-			"../mandelbrot.frag",
-			"../terrain.vert",
-			"../terrain.frag",
-			"../cube.vert",
-			"../cube.frag"
+			// "../cube.vert",
+			// "../cube.frag",
+			"./terrain.vert",
+			"./terrain.frag",
+			"./cube.vert",
+			"./cube.frag"
 		};
 
 		for (const char* file : shaderFiles) {
@@ -62,22 +62,22 @@ void Game::Init() {
 		std::cout << "Loading shaders..." << std::endl;
 
 		try {
-			std::cout << "Creating mandelbrot shader..." << std::endl;
-			gridShader = new Shader("../default.vert", "../default.frag");
+			std::cout << "Creating mandelbrot shader...Game.cpp::65" << std::endl;
+			gridShader = new Shader("./cube.vert", "./cube.frag");
 			if (!gridShader || gridShader->ID == 0) {
 				throw std::runtime_error("Failed to create mandelbrot shader");
 			}
 
 			std::cout << "Creating terrain shader..." << std::endl;
-			terrShader = new Shader("../terrain.vert", "../terrain.frag");
+			terrShader = new Shader("./terrain.vert", "./terrain.frag");
 			if (!terrShader || terrShader->ID == 0) {
-				throw std::runtime_error("Failed to create terrain shader");
+				throw std::runtime_error("Failed to create terrain shader Game.cpp::74");
 			}
 
 			std::cout << "Creating cube shader..." << std::endl;
-			boxShader = new Shader("../cube.vert", "../cube.frag");
+			boxShader = new Shader("./cube.vert", "./cube.frag");
 			if (!boxShader || boxShader->ID == 0) {
-				throw std::runtime_error("Failed to create cube shader");
+				throw std::runtime_error("Failed to create cube shader Game.cpp::80");
 			}
 
 			std::cout << "All shaders created successfully" << std::endl;
@@ -96,13 +96,13 @@ void Game::Init() {
 		
 		try {
 			grid = new GridSystem(Width, Height);
-			if (!grid) throw std::runtime_error("Failed to create grid system");
+			if (!grid) throw std::runtime_error("Failed to create grid system Game.cpp:99");
 
 			terrain = new Terrain();
-			if (!terrain) throw std::runtime_error("Failed to create terrain");
+			if (!terrain) throw std::runtime_error("Failed to create terrain Game.cpp:102");
 
 			box = new Cube();
-			if (!box) throw std::runtime_error("Failed to create cube");
+			if (!box) throw std::runtime_error("Failed to create cube Game.cpp:105");
 		}
 		catch (const std::exception& e) {
 			std::cerr << "Object initialization failed: " << e.what() << std::endl;
@@ -136,30 +136,30 @@ void Game::ProcessInput(GLFWwindow*window) {
 	cam->Inputs(window);
 	//camera inputs for the cube
 	//abstract later
-	if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
 		box->Move(glm::vec3(0.0f, 0.0f, -0.1f));//forward
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
 		box->Move(glm::vec3(0.0f, 0.0f,0.1f)); //backward one unit
 	}
-	if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
 		box->Move(glm::vec3(0.1f, 0.0f, 0.0f));//right one unit
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) {
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
 		box->Move(glm::vec3(-0.1f, 0.0f, 0.0f));//left one unit
 	}
 	if (glfwGetKey(window, GLFW_KEY_SPACE == GLFW_PRESS)) {
 		box->Move(glm::vec3(0.0f, 1.0f, 0.0f));
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) zoom *= 1.05f;  // Zoom in
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) zoom /= 1.05f;  // Zoom out
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) offset.x -= 0.05f / zoom;  // Pan left
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) offset.x += 0.05f / zoom;  // Pan right
-	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) offset.y += 0.05f / zoom; // Pan up
-	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) offset.y -= 0.05f / zoom; //
+	// if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS) zoom *= 1.05f;  // Zoom in
+	// if (glfwGetKey(window, GLFW_KEY_N) == GLFW_PRESS) zoom /= 1.05f;  // Zoom out
+	// if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) offset.x -= 0.05f / zoom;  // Pan left
+	// if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) offset.x += 0.05f / zoom;  // Pan right
+	// if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) offset.y += 0.05f / zoom; // Pan up
+	// if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) offset.y -= 0.05f / zoom; //
 
 
 
@@ -185,12 +185,12 @@ void Game::Render(){
 	glUniformMatrix4fv(glGetUniformLocation(gridShader->ID, "model"), 1, GL_FALSE, glm::value_ptr(modelMatrix));
 	cam->Matrix(*gridShader,"camMatrix");
 	glm::vec2 resolution(Width, Height);
-	grid->renderMandelbrot(*gridShader, zoom, offset, resolution);
+	// grid->renderMandelbrot(*gridShader, zoom, offset, resolution);
 
-	//grid->renderGrid();
-	/*cubeShader->Activate();
-	glUniformMatrix4fv(glGetUniformLocation(cubeShader->ID, "view"), 1, GL_FALSE, glm::value_ptr(view));
-	glUniformMatrix4fv(glGetUniformLocation(cubeShader->ID, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+	// grid->renderGrid();
+	// cubeShader->Activate();
+	// glUniformMatrix4fv(glGetUniformLocation(cubeShader->ID, "view"), 1, GL_FALSE, glm::value_ptr(view));
+	// glUniformMatrix4fv(glGetUniformLocation(cubeShader->ID, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 
 	/*the render calls for the terrain*/
 	//activate the shader program

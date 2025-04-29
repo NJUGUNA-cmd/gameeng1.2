@@ -1,7 +1,7 @@
 CMakeFiles/gameeng.dir/Game.cpp.obj: \
  C:\Users\IAN\source\repos\gameeng1.2\Game.cpp \
  C:\Users\IAN\source\repos\gameeng1.2\Game.h \
- C:/Users/IAN/source/repos/OpenGL/include/glad.h \
+ C:/Users/IAN/source/repos/OpenGL/include/glad/glad.h \
  C:/Users/IAN/source/repos/OpenGL/include/KHR/khrplatform.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
@@ -16,7 +16,6 @@ CMakeFiles/gameeng.dir/Game.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/PROGRA~1/GLFW/include/GLFW/glfw3.h \
  C:\Users\IAN\source\repos\gameeng1.2\Cube.h \
- C:/Users/IAN/source/repos/OpenGL/include/glad/glad.h \
  C:/Users/IAN/source/repos/OpenGL/include/glm/glm.hpp \
  C:/Users/IAN/source/repos/OpenGL/include/glm/detail/_fixes.hpp \
  C:/mingw64/include/c++/14.2.0/cmath \
@@ -290,6 +289,7 @@ CMakeFiles/gameeng.dir/Game.cpp.obj: \
  C:/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/mingw64/include/c++/14.2.0/tuple \
  C:\Users\IAN\source\repos\gameeng1.2\shaderClass.h \
+ C:/Users/IAN/source/repos/OpenGL/include/glad.h \
  C:/mingw64/include/c++/14.2.0/string \
  C:/mingw64/include/c++/14.2.0/bits/stringfwd.h \
  C:/mingw64/include/c++/14.2.0/bits/char_traits.h \

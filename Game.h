@@ -1,7 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <glad.h>
+#include <glad/glad.h>
 #include<GLFW/glfw3.h>
 #include"Cube.h"
 #include"Terrain.h"

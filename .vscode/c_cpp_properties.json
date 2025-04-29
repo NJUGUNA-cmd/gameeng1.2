@@ -4,10 +4,18 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Program Files/GLFW/include/",
-                // Add other include paths here
+                // "${workspaceFolder}/include",
+                "C:/Users/IAN/source/repos/OpenGL/include",
+                "C:/Users/IAN/source/repos/OpenGL/include/glad",
+                "C:/Users/IAN/source/repos/OpenGL/include/glm",
+                "C:/Program Files/GLFW/include"
             ],
-            "defines": [],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
             "compilerPath": "C:/mingw64/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
